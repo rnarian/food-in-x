@@ -1,13 +1,33 @@
 <?php
 
   function get_venues(){
-    $venues =  require(__DIR__ . '/../data/venues.php');
+    $venues = require(__DIR__ . '/../data/venues.php');
+
+    foreach($_GET as $key => $value){
+      if(!empty($value)){
+        foreach($venues as $vKey => $vValue){
+          if($vValue[$key] != $value){
+            unset($venues[$vKey]);
+          }
+        }
+      }
+    }
 
     usort($venues, function($a, $b){
       return strcmp($a['name'], $b['name']);
     });
 
     return $venues;
+  }
+
+  function get_option($type) {
+    $venues = require(__DIR__ . '/../data/venues.php');
+    $options = array();
+    foreach($venues as $key => $value){
+      $options[] = $value[$type];
+    }
+    $options = array_unique($options);
+    return $options;
   }
 
   function slugify($text){
