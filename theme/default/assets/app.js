@@ -20,4 +20,9 @@ $(document).ready(main);
 
 $(document).ready(function() {
   $('h1,p,.desc,blockquote').widowFix();
+
+  $('form.filter').children('[type=submit]').hide();
+  $('form.filter').change(function() {
+    $(this).submit();
+  });
 });

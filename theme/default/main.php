@@ -6,7 +6,7 @@
   <body>
     <div id="fix">
       <span class="left">
-        <?= sizeof(get_venues(true)); ?> places to pick up good food in Würzburg.
+        <?= sizeof(get_venues()); ?> places to pick up good food in Würzburg.
       </span>
       <span class="right">
         <span>By <?= $config['author_link']; ?>. Code available on <a target="_blank" href="https://github.com/janoelze/food-in-x">GitHub</a>.</span>
@@ -15,14 +15,15 @@
     <div id="head" class="dim">
       <h1><?= $config['site_title']; ?></h1>
 
-      <form methode="get" action="index.php">
-        Filter:
+      <form class="filter" methode="get" action="index.php">
+        <label>Type:
         <select name="type">
           <option value="">-</option>
           <?php foreach(get_option('type') as $option): ?>
             <option <?php if($_GET['type'] == $option){echo 'selected ';} ?>value="<?php echo $option; ?>"><?php echo $option; ?></option>
           <?php endforeach; ?>
-        </select>
+        </select></label>
+        <label>Price:
         <select name="price">
           <option value="">-</option>
           <?php foreach(get_option('price') as $option): ?>
@@ -32,13 +33,14 @@
               } ?>
             </option>
           <?php endforeach; ?>
-        </select>
+        </select></label>
+        <label>Occasion:
         <select name="best_for">
           <option value="">-</option>
           <?php foreach(get_option('best_for') as $option): ?>
             <option <?php if($_GET['best_for'] == $option){echo 'selected ';} ?>value="<?php echo $option; ?>"><?php echo $option; ?></option>
           <?php endforeach; ?>
-        </select>
+        </select></label>
         <input type="submit">
       </form>
 
