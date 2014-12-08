@@ -6,10 +6,10 @@
   <body>
     <div id="fix">
       <span class="left">
-        <?= sizeof(get_venues()); ?> places to pick up good food in Würzburg.
+        <?= sizeof(get_venues(true)); ?> places to pick up good food in Würzburg.
       </span>
       <span class="right">
-        <span><?= $config['author_link']; ?> Code available on <a target="_blank" href="https://github.com/janoelze/food-in-x">GitHub</a>.</span>
+        <span>By <?= $config['author_link']; ?>. Code available on <a target="_blank" href="https://github.com/janoelze/food-in-x">GitHub</a>.</span>
       </span>
     </div>
     <div id="head" class="dim">
@@ -26,7 +26,11 @@
         <select name="price">
           <option value="">-</option>
           <?php foreach(get_option('price') as $option): ?>
-            <option <?php if($_GET['price'] == $option){echo 'selected ';} ?>value="<?php echo $option; ?>"><?php echo $option; ?></option>
+            <option <?php if($_GET['price'] == $option){echo 'selected ';} ?>value="<?php echo $option; ?>">
+              <?php for($i = 0; $i < $option; $i++) {
+                echo '$';
+              } ?>
+            </option>
           <?php endforeach; ?>
         </select>
         <select name="best_for">
@@ -37,7 +41,7 @@
         </select>
         <input type="submit">
       </form>
-      
+
     </div>
     <div id="venues">
       <?php foreach (get_venues() as $venue) { ?>
