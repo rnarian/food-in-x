@@ -11,7 +11,7 @@
 
   $config = array(
     'site_title' => 'Food in Würzburg', # You should rename this to match your city.
-    'author_link' => '', # This is displayed in the header.
+    'author_link' => '<a target="_blank" href="http://twitter.com/ffffancy">@ffffancy</a>', # This is displayed in the header.
     'base_url' => 'http://localhost/food', # Point this URL to your food-in-x site. No trailing slash please.
     'footer_text' => 'Some places I like to eat at. Hope you like it.', # The text, that is displayed in the footer.
     'theme' => 'default',
