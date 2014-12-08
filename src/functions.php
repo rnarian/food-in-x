@@ -1,18 +1,18 @@
 <?php
 
-  function get_venues(){
+  function get_venues($all=false){
     $venues = require(__DIR__ . '/../data/venues.php');
-
-    foreach($_GET as $key => $value){
-      if(!empty($value)){
-        foreach($venues as $vKey => $vValue){
-          if($vValue[$key] != $value){
-            unset($venues[$vKey]);
+    if(!$all) {
+      foreach($_GET as $key => $value){
+        if(!empty($value)){
+          foreach($venues as $vKey => $vValue){
+            if($vValue[$key] != $value){
+              unset($venues[$vKey]);
+            }
           }
         }
       }
     }
-
     usort($venues, function($a, $b){
       return strcmp($a['name'], $b['name']);
     });
