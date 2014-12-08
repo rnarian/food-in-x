@@ -1,6 +1,6 @@
 <?php
 
-  # About:      A php thing to list nice places for grabbing food. 
+  # About:      A php thing to list nice places for grabbing food.
   # Author:     Jan Oelze <jan@codein.is>
   # Date:       18. November 2013
 
@@ -10,12 +10,12 @@
   require_once 'src/functions.php';
 
   $config = array(
-    'site_title' => 'Food in Musterstadt', # You should rename this to match your city.
-    'author_link' => '<a target="_blank" href="http://twitter.com/JohnDoe">@JohnDoe</a>', # This is displayed in the header.
-    'base_url' => 'http://janoelze.de/food-in-x', # Point this URL to your food-in-x site. No trailing slash please.
+    'site_title' => 'Food in Würzburg', # You should rename this to match your city.
+    'author_link' => '', # This is displayed in the header.
+    'base_url' => 'http://localhost/food', # Point this URL to your food-in-x site. No trailing slash please.
     'footer_text' => 'Some places I like to eat at. Hope you like it.', # The text, that is displayed in the footer.
     'theme' => 'default',
-    'max_dollar_signs' => 4
+    'max_dollar_signs' => 5
   );
 
   include 'theme/' . $config['theme'] . '/main.php';
