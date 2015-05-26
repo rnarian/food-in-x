@@ -10,9 +10,9 @@
   require_once 'src/functions.php';
 
   $config = array(
-    'site_title' => 'Food in Würzburg', # You should rename this to match your city.
+    'site_title' => 'We go Restaurant', # You should rename this to match your city.
     'author_link' => '<a target="_blank" href="http://twitter.com/ffffancy">@ffffancy</a>', # This is displayed in the header.
-    'base_url' => 'http://localhost/food', # Point this URL to your food-in-x site. No trailing slash please.
+    'base_url' => 'http://192.168.2.134/food', # Point this URL to your food-in-x site. No trailing slash please.
     'footer_text' => 'Some places I like to eat at. Hope you like it.', # The text, that is displayed in the footer.
     'theme' => 'default',
     'max_dollar_signs' => 5
