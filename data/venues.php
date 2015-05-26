@@ -1,54 +1,63 @@
 <?php
 
   # This is where you put your reviews.
-  # You can plugin whatever data source you want to use. 
+  # You can plugin whatever data source you want to use.
   # Important is, that you return an array with your reviews.
 
   return array(
     array(
-      'name' => 'John Does Burgers',
-      'description' => 'Once you get rid of the cucumber, <br>the burger\'s quite good!', 
-      'address' => 'Barbeque-Straße 2, 20259 Hamburg',
+      'name' => 'Veggie Bros',
+      'description' => 'Just check out their falasophie.',
+      'address' => 'Juliuspromenade 38, 97070 Würzburg',
       'price' => 3, # The number of dollar signs
-      'best_for' => 'Dinner', # "Lunch" or "Dinner". Can be anything.
-      'url' => 'http://www.yelp.de/biz/john-doe-burger-hamburg', # An external URL
-      'type' => 'American', # The category of the venue. Diner, sushi bar, cafe, etc
+      'best_for' => 'Lunch', # "Lunch" or "Dinner". Can be anything.
+      'url' => 'http://www.veggiebros.de/', # An external URL
+      'type' => 'Veggie', # The category of the venue. Diner, sushi bar, cafe, etc
     ),
     array(
-      'name' => 'La Bella Italia',
-      'description' => 'Man, what a great pizza!', 
-      'address' => 'Am Teig Teich 102, 20259 Hamburg',
-      'price' => 2,
+      'name' => 'Osteria Trio',
+      'description' => 'Pizza as large as the table.',
+      'address' => 'Spitalgasse 1, 97082 Würzburg',
+      'price' => 3,
       'best_for' => 'Dinner',
-      'url' => 'http://www.yelp.de/biz/la-bella-italia-hamburg',
+      'url' => 'http://www.yelp.de/biz/osteria-trio-w%C3%BCrzburg',
       'type' => 'Italian',
     ),
     array(
-      'name' => 'Sushi-Town',
-      'description' => 'That was one delicious lunch!', 
-      'address' => 'Wakame Weg 5, 20259 Hamburg',
+      'name' => 'Bratwurststand Knüpfing',
+      'description' => 'Best worscht in Town.',
+      'address' => 'Marktplatz, 97070 Würzburg',
       'price' => 1,
       'best_for' => 'Fast-Food',
-      'url' => 'http://www.yelp.de/biz/sushi-town-new-york',
-      'type' => 'Sushi',
+      'url' => 'http://www.yelp.de/biz/bratwurststand-kn%C3%BCpfing-w%C3%BCrzburg?osq=Fast+Food+%26+Imbiss',
+      'type' => 'German',
     ),
     array(
-      'name' => 'La Bella Italia',
-      'description' => 'Man, what a great pizza!', 
-      'address' => 'Am Teig Teich 102, 20259 Hamburg',
-      'price' => 2,
-      'best_for' => 'Dinner',
-      'url' => 'http://www.yelp.de/biz/la-bella-italia-hamburg',
+      'name' => 'Burger & Bier',
+      'description' => 'Burger, Fries and (Craft) Bier.',
+      'address' => 'Bronnbacher Gasse 43, 97070 Würzburg',
+      'price' => 3,
+      'best_for' => 'Fast-Food',
+      'url' => 'http://www.burger-n-bier.de',
+      'type' => 'American',
+    ),
+    array(
+      'name' => 'Habaneros',
+      'description' => 'Fast-Food & Diner',
+      'address' => 'Theaterstraße 1, 97070 Würzburg',
+      'price' => 3,
+      'best_for' => 'Fast-Food',
+      'url' => 'http://www.habaneros.de/',
+      'type' => 'Tex-Mex',
+    ),
+    array(
+      'name' => 'Casa del Gusto',
+      'description' => '',
+      'address' => 'Herzogenstraße 9, 97070 Würzburg',
+      'price' => 3,
+      'best_for' => 'Lunch',
+      'url' => 'http://www.casadelgusto.de/',
       'type' => 'Italian',
-    ),
-    array(
-      'name' => 'Sushi-Town',
-      'description' => 'That was one delicious lunch!', 
-      'address' => 'Wakame Weg 5, 20259 Hamburg',
-      'price' => 1,
-      'best_for' => 'Fast-Food',
-      'url' => 'http://www.yelp.de/biz/sushi-town-new-york',
-      'type' => 'Sushi',
     ),
   );
 
