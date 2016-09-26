@@ -68,6 +68,15 @@
       'url' => 'https://www.facebook.com/yummys.wuerzburg/',
       'type' => 'Bagels',
     ),
+    array(
+      'name' => 'Alte Mainmühle',
+      'description' => 'Best worscht in Town',
+      'address' => 'Mainkai 1, 97070 Würzburg',
+      'price' => 2,
+      'best_for' => 'Lunch, Diner',
+      'url' => 'http://www.alte-mainmuehle.de/',
+      'type' => 'Bagels',
+    ),
   );
 
 ?>
