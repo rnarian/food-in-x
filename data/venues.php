@@ -52,9 +52,9 @@
     ),
     array(
       'name' => 'Casa del Gusto',
-      'description' => '',
+      'description' => 'Italian food by an italian grandpa',
       'address' => 'Herzogenstraße 9, 97070 Würzburg',
-      'price' => 3,
+      'price' => 2,
       'best_for' => 'Lunch',
       'url' => 'http://www.casadelgusto.de/',
       'type' => 'Italian',
