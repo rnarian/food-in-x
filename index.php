@@ -12,7 +12,7 @@
   $config = array(
     'site_title' => 'We go Restaurant', # You should rename this to match your city.
     'author_link' => '<a target="_blank" href="http://twitter.com/ffffancy">@ffffancy</a>', # This is displayed in the header.
-    'base_url' => 'http://192.168.2.134/food', # Point this URL to your food-in-x site. No trailing slash please.
+    'base_url' => 'http://food.dev', # Point this URL to your food-in-x site. No trailing slash please.
     'footer_text' => 'Some places I like to eat at. Hope you like it.', # The text, that is displayed in the footer.
     'theme' => 'default',
     'max_dollar_signs' => 5
