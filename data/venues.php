@@ -25,7 +25,7 @@
     ),
     array(
       'name' => 'Bratwurststand Knüpfing',
-      'description' => 'Best worscht in Town.',
+      'description' => '2nd Best worscht in Town.',
       'address' => 'Marktplatz, 97070 Würzburg',
       'price' => 1,
       'best_for' => 'Fast-Food',
