@@ -59,6 +59,15 @@
       'url' => 'http://www.casadelgusto.de/',
       'type' => 'Italian',
     ),
+    array(
+      'name' => 'Yummy\'s',
+      'description' => '',
+      'address' => 'Herzogenstraße, 97070 Würzburg',
+      'price' => 2,
+      'best_for' => 'Lunch',
+      'url' => 'https://www.facebook.com/yummys.wuerzburg/',
+      'type' => 'Bagels',
+    ),
   );
 
 ?>
