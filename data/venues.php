@@ -37,7 +37,7 @@
       'description' => 'Burger, Fries and (Craft) Bier.',
       'address' => 'Bronnbacher Gasse 43, 97070 Würzburg',
       'price' => 3,
-      'best_for' => 'Fast-Food',
+      'best_for' => 'Dinner',
       'url' => 'http://www.burger-n-bier.de',
       'type' => 'American',
     ),
